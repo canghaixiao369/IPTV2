@@ -29,7 +29,7 @@ jobs:
         # 卫视源
         rm -f CNTV.txt && touch CNTV.txt
         wget http://jianhan.vip/yzt91220/幻影直播.txt -O CNTV1.txt && sed -i -n '/卫视频道/,+1p' CNTV1.txt
-        wget https://idc.weyun.site/iptv/iptv.txt -O CNTV2.txt && sed -i -n '/河南/,+1p' CNTV2.txt
+        wget http://8.138.7.223/henan.txt && sed -i -n '/河南/,+1p' CNTV2.txt
         wget https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u -O CNTV3.txt && sed -i -n '/电影/,+1p' CNTV3.txt
         cat CNTV1.txt >> CNTV.txt
         cat CNTV2.txt >> CNTV.txt
